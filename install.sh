@@ -41,14 +41,19 @@ fi
 # ── INSTALL ──
 echo "=== Installing $DISPLAY_NAME ==="
 
-# Check for Love2D
-if ! command -v love &>/dev/null; then
-    echo "Installing Love2D..."
+# Install dependencies
+DEPS=()
+command -v love &>/dev/null || DEPS+=(love)
+command -v git &>/dev/null || DEPS+=(git)
+command -v rsvg-convert &>/dev/null || DEPS+=(librsvg)
+
+if [ ${#DEPS[@]} -gt 0 ]; then
+    echo "Installing dependencies: ${DEPS[*]}"
     if command -v pacman &>/dev/null; then
-        sudo pacman -S --noconfirm love
+        sudo pacman -S --noconfirm "${DEPS[@]}"
     else
-        echo "Error: Love2D (love) is not installed and pacman not found."
-        echo "Install Love2D manually and re-run this script."
+        echo "Error: missing ${DEPS[*]} and pacman not found."
+        echo "Install them manually and re-run this script."
         exit 1
     fi
 fi
