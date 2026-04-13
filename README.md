@@ -4,6 +4,8 @@ A classic Asteroids arcade game built with Love2D for [Omarchy](https://omarchy.
 
 Vector wireframe aesthetic that auto-detects your Omarchy system theme and font — the game matches your desktop.
 
+[![OMA-ROIDS Gameplay](https://img.youtube.com/vi/_gYyesDgFtU/maxresdefault.jpg)](https://youtu.be/_gYyesDgFtU)
+
 ## Install
 
 ```bash
