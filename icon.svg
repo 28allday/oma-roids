@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Main asteroid -->
+  <polygon
+    points="256,80 310,95 355,130 370,170 390,210 375,260 380,310 350,355 310,380 270,390 220,385 175,365 145,330 130,280 125,230 140,180 155,140 190,105 230,85"
+    fill="none"
+    stroke="white"
+    stroke-width="6"
+    stroke-linejoin="round"
+  />
+  <!-- Main asteroid surface detail -->
+  <line x1="190" y1="105" x2="230" y2="180" stroke="white" stroke-width="3" opacity="0.5"/>
+  <line x1="355" y1="130" x2="310" y2="210" stroke="white" stroke-width="3" opacity="0.5"/>
+  <line x1="220" y1="385" x2="250" y2="310" stroke="white" stroke-width="3" opacity="0.5"/>
+
+  <!-- Small asteroid top-right -->
+  <polygon
+    points="420,70 440,60 460,68 468,85 462,105 445,112 425,108 415,90"
+    fill="none"
+    stroke="white"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Tiny asteroid bottom-left -->
+  <polygon
+    points="85,400 100,392 112,398 115,412 105,422 90,420"
+    fill="none"
+    stroke="white"
+    stroke-width="3"
+    stroke-linejoin="round"
+  />
+</svg>
