@@ -1,4 +1,4 @@
-# OMA-RIODS
+# OMA-ROIDS
 
 A classic Asteroids arcade game built with Love2D for [Omarchy](https://omarchy.org/) Linux.
 
@@ -7,21 +7,21 @@ Vector wireframe aesthetic that auto-detects your Omarchy system theme and font 
 ## Install
 
 ```bash
-curl -sL https://git.no-signal.uk/nosignal/oma-riods/raw/branch/master/install.sh | bash
+curl -sL https://git.no-signal.uk/nosignal/oma-roids/raw/branch/master/install.sh | bash
 ```
 
 This will:
 - Install Love2D if not present
-- Clone the game to `~/.local/share/oma-riods/`
+- Clone the game to `~/.local/share/oma-roids/`
 - Add an icon and launcher entry to your app menu
 - Refresh the app launcher
 
-Search **OMA-RIODS** in your app launcher to play.
+Search **OMA-ROIDS** in your app launcher to play.
 
 ## Uninstall
 
 ```bash
-oma-riods-uninstall
+oma-roids-uninstall
 ```
 
 ## Controls
@@ -68,8 +68,8 @@ oma-riods-uninstall
 ## Run from source
 
 ```bash
-git clone https://git.no-signal.uk/nosignal/oma-riods.git
-cd oma-riods
+git clone https://git.no-signal.uk/nosignal/oma-roids.git
+cd oma-roids
 love .
 ```
 

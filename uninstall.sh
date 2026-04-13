@@ -1,10 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-# OMA-RIODS Uninstaller
+# OMA-ROIDS Uninstaller
 
-GAME_NAME="oma-riods"
-DISPLAY_NAME="OMA-RIODS"
+GAME_NAME="oma-roids"
+DISPLAY_NAME="OMA-ROIDS"
 
 INSTALL_DIR="$HOME/.local/share/$GAME_NAME"
 DESKTOP_FILE="$HOME/.local/share/applications/$GAME_NAME.desktop"

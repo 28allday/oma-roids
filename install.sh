@@ -1,14 +1,14 @@
 #!/bin/bash
 set -euo pipefail
 
-# OMA-RIODS Installer / Uninstaller
+# OMA-ROIDS Installer / Uninstaller
 # Usage: ./install.sh          — install the game
 #        ./install.sh uninstall — remove the game
 
-GAME_NAME="oma-riods"
-DISPLAY_NAME="OMA-RIODS"
+GAME_NAME="oma-roids"
+DISPLAY_NAME="OMA-ROIDS"
 COMMENT="Classic asteroids arcade game with Omarchy theme integration"
-REPO_URL="https://git.no-signal.uk/nosignal/oma-riods.git"
+REPO_URL="https://git.no-signal.uk/nosignal/oma-roids.git"
 
 INSTALL_DIR="$HOME/.local/share/$GAME_NAME"
 DESKTOP_FILE="$HOME/.local/share/applications/$GAME_NAME.desktop"
@@ -109,19 +109,19 @@ EOF
 mkdir -p "$HOME/.local/bin"
 cat > "$UNINSTALL_BIN" << 'UNINSTALL'
 #!/bin/bash
-# Uninstall OMA-RIODS
-SCRIPT_URL="https://git.no-signal.uk/nosignal/oma-riods/raw/branch/master/install.sh"
-curl -sL "$SCRIPT_URL" | bash -s uninstall 2>/dev/null || bash "$HOME/.local/share/oma-riods/install.sh" uninstall 2>/dev/null || {
+# Uninstall OMA-ROIDS
+SCRIPT_URL="https://git.no-signal.uk/nosignal/oma-roids/raw/branch/master/install.sh"
+curl -sL "$SCRIPT_URL" | bash -s uninstall 2>/dev/null || bash "$HOME/.local/share/oma-roids/install.sh" uninstall 2>/dev/null || {
     # Fallback: inline uninstall
-    rm -f "$HOME/.local/share/applications/oma-riods.desktop"
-    rm -rf "$HOME/.local/share/oma-riods"
+    rm -f "$HOME/.local/share/applications/oma-roids.desktop"
+    rm -rf "$HOME/.local/share/oma-roids"
     for s in 16 32 48 64 128 256 512; do
-        rm -f "$HOME/.local/share/icons/hicolor/${s}x${s}/apps/oma-riods.png"
+        rm -f "$HOME/.local/share/icons/hicolor/${s}x${s}/apps/oma-roids.png"
     done
-    rm -f "$HOME/.local/share/icons/hicolor/scalable/apps/oma-riods.svg"
-    rm -f "$HOME/.local/bin/oma-riods-uninstall"
+    rm -f "$HOME/.local/share/icons/hicolor/scalable/apps/oma-roids.svg"
+    rm -f "$HOME/.local/bin/oma-roids-uninstall"
     command -v omarchy-restart-walker &>/dev/null && omarchy-restart-walker 2>/dev/null
-    echo "OMA-RIODS uninstalled"
+    echo "OMA-ROIDS uninstalled"
 }
 UNINSTALL
 chmod +x "$UNINSTALL_BIN"

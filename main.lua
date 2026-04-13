@@ -109,7 +109,7 @@ local function drawTitleScreen()
 
     love.graphics.setFont(Fonts.large)
     love.graphics.setColor(p.bright)
-    love.graphics.printf("OMA-RIODS", 0, centerY, sw, "center")
+    love.graphics.printf("OMA-ROIDS", 0, centerY, sw, "center")
 
     -- Decorative wireframe lines
     love.graphics.setColor(p.asteroid[1], p.asteroid[2], p.asteroid[3], 0.2)

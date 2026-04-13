@@ -1,5 +1,5 @@
 function love.conf(t)
-    t.window.title = "OMA-RIODS"
+    t.window.title = "OMA-ROIDS"
     t.window.width = 1024
     t.window.height = 768
     t.window.resizable = true
