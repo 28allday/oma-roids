@@ -8,7 +8,7 @@ set -euo pipefail
 GAME_NAME="oma-roids"
 DISPLAY_NAME="OMA-ROIDS"
 COMMENT="Classic asteroids arcade game with Omarchy theme integration"
-REPO_URL="https://git.no-signal.uk/nosignal/oma-roids.git"
+REPO_URL="https://github.com/28allday/oma-roids.git"
 
 INSTALL_DIR="$HOME/.local/share/$GAME_NAME"
 DESKTOP_FILE="$HOME/.local/share/applications/$GAME_NAME.desktop"
@@ -110,7 +110,7 @@ mkdir -p "$HOME/.local/bin"
 cat > "$UNINSTALL_BIN" << 'UNINSTALL'
 #!/bin/bash
 # Uninstall OMA-ROIDS
-SCRIPT_URL="https://git.no-signal.uk/nosignal/oma-roids/raw/branch/master/install.sh"
+SCRIPT_URL="https://raw.githubusercontent.com/28allday/oma-roids/master/install.sh"
 curl -sL "$SCRIPT_URL" | bash -s uninstall 2>/dev/null || bash "$HOME/.local/share/oma-roids/install.sh" uninstall 2>/dev/null || {
     # Fallback: inline uninstall
     rm -f "$HOME/.local/share/applications/oma-roids.desktop"

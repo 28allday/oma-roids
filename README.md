@@ -9,7 +9,7 @@ Vector wireframe aesthetic that auto-detects your Omarchy system theme and font 
 ## Install
 
 ```bash
-curl -sL https://git.no-signal.uk/nosignal/oma-roids/raw/branch/master/install.sh | bash
+curl -sL https://raw.githubusercontent.com/28allday/oma-roids/master/install.sh | bash
 ```
 
 This will:
@@ -70,7 +70,7 @@ oma-roids-uninstall
 ## Run from source
 
 ```bash
-git clone https://git.no-signal.uk/nosignal/oma-roids.git
+git clone https://github.com/28allday/oma-roids.git
 cd oma-roids
 love .
 ```
